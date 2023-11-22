@@ -1,0 +1,81 @@
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2;
+        }
+        
+        .header {
+            background-color: #c97171;
+            padding: 10px;
+        }
+        
+        .image-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .image-container img {
+            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+            /* Adjust the margin as needed */
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .divbutton {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            /* Modify the font family as needed */
+        }
+        
+        .button1 {
+            border-radius: 20px;
+            height: 150px;
+            width: 900px;
+            background-color: #bab5b5;
+        }
+        
+        .button2,
+        .button3,
+        .button4 {
+            border-radius: 200px;
+            margin-left: 150px;
+            background-color: #bab5b5;
+            height: 130px;
+            width: 230px;
+            font-size: 16px;
+            /* Modify the font size as needed */
+            padding: 10px 20px;
+            /* Modify the padding as needed */
+            margin: 5px;
+            /* Modify the margin as needed */
+            background-color: #bab5b5;
+            /* Modify the background color as needed */
+            color: rgb(12, 12, 12);
+            /* Modify the text color as needed */
+            border: none;
+            border-radius: 5px;
+            /* Modify the border radius as needed */
+            cursor: pointer;
+        }
+        
+        .button2:hover,
+        .button3:hover,
+        .button4:hover,
+        .button1:hover {
+            background-color: #49534b;
+            /* Modify the background color on hover as needed */
+        }
