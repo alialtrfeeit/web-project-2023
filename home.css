@@ -1,11 +1,6 @@
         body {
             font-family: Arial, sans-serif;
-            line-height: 2;
-        }
-        
-        .header {
-            background-color: #c97171;
-            padding: 10px;
+            line-height: 1;
         }
         
         .image-container {
@@ -14,14 +9,15 @@
         }
         
         .image-container img {
-            margin-right: 10px;
             width: 60px;
             height: 60px;
-            /* Adjust the margin as needed */
+        }
+        
+        .header {
+            padding: 10px;
         }
         
         nav ul {
-            list-style-type: none;
             padding: 0;
         }
         
@@ -32,43 +28,31 @@
         
         nav ul li a {
             text-decoration: none;
-            color: #333;
-        }
-        
-        .divbutton {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            /* Modify the font family as needed */
+            color: #050505;
+            font-size: 18px;
         }
         
         .button1 {
-            border-radius: 20px;
+            border-radius: 30px;
             height: 150px;
             width: 900px;
             background-color: #bab5b5;
+            cursor: pointer;
+            font-size: 50px;
+            border: none;
         }
         
         .button2,
         .button3,
         .button4 {
-            border-radius: 200px;
-            margin-left: 150px;
-            background-color: #bab5b5;
             height: 130px;
             width: 230px;
-            font-size: 16px;
-            /* Modify the font size as needed */
-            padding: 10px 20px;
-            /* Modify the padding as needed */
-            margin: 5px;
-            /* Modify the margin as needed */
+            font-size: 30px;
+            margin: 20px;
             background-color: #bab5b5;
-            /* Modify the background color as needed */
             color: rgb(12, 12, 12);
-            /* Modify the text color as needed */
             border: none;
-            border-radius: 5px;
-            /* Modify the border radius as needed */
+            border-radius: 20px;
             cursor: pointer;
         }
         
@@ -76,6 +60,6 @@
         .button3:hover,
         .button4:hover,
         .button1:hover {
-            background-color: #49534b;
+            background-color: #6a9272;
             /* Modify the background color on hover as needed */
         }
