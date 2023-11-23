@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="equip.css">
-    <title>equip </title>
+    <title>equip</title>
+    <link rel="stylesheet" type="text/css" href="equip.css">
 </head>
 
-<body dir="rtl">
-    <div class="image-container"><img src=" C:/xamp/htdocs/web%20project%202023/imeges/images.png" alt="">
+<body>
+
+    <div dir="rtl" class="image-container"><img src=" C:/xamp/htdocs/web%20project%202023/imeges/images.png" alt="">
 
         <h3>
             قسم شؤون الاقسام الداخلية
@@ -18,7 +17,7 @@
 
     <header>
 
-        <nav>
+        <nav dir="rtl">
             <ul>
                 <li><a href=" C:/xamp/htdocs/web%20project%202023/home.html">الصفحة الرئيسية</a></li>
                 <li><a href=" C:/xamp/htdocs/web%20project%202023/managment.html">الادارة</a></li>
@@ -29,43 +28,45 @@
             </ul>
         </nav>
         <hr>
-        <br>
-        <div class="image-ref"><img src="  C:/xamp/htdocs/web%20project%202023/imeges/klipartz.com.png" alt="">
 
-            <h3>
-                استمارة التجهيز </h3>
-        </div>
-        <br>
     </header>
-    <form>
-        <div class="form-group">
-            <label for="name">اسم المادة:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="sector">  عدد المادة:</label>
-            <input type="text" id="sector" name="sector" required>
-        </div>
-        <div class="form-group">
-            <label for="room">نوع الصيانة:</label>
-            <input type="text" id="room" name="room" required>
-        </div>
-        <div class="form-group">
-            <label for="maintenance">مسؤول الصيانة:</label>
-            <select id="maintenance" name="maintenance" required>
-        
-        <option value="options">Options</option>
-        <option value="notes">Notes</option>
-      </select>
 
 
-            <div class="notes-container">
-                <label for="maintenance">الملاحظات:</label>
-                <textarea id="notes" name="notes" rows="5" placeholder="Enter your notes here"></textarea>
-            </div>
-        </div>
-        <button type="submit">ارسال</button>
-    </form>
+    <div class="container">
+        <h4>استمارة التجهيز </h4>
+
+        <form>
+
+            <label for="email">اسم المادة</label>
+            <input type="email" id="email" name="email">
+
+
+
+            <label for="email"> عدد المادة</label>
+            <input type="email" id="email" name="email">
+
+
+            <label for="email">    نوع الصيانة</label>
+            <input type="email" id="email" name="email">
+
+
+            <label for="email">   مسؤول الصيانة</label>
+            <input type="email" id="email" name="email">
+
+
+            <label for="email">      الملاحظات</label>
+            <input type="email" id="email" name="email">
+
+
+
+
+
+            <input type="submit" value="ارسال">
+
+
+
+        </form>
+    </div>
 </body>
 
 </html>
