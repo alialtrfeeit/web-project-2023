@@ -1,11 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 2;
-}
-
-.header {
-    background-color: #c97171;
-    padding: 10px;
+    line-height: 1;
 }
 
 .image-container {
@@ -14,14 +9,15 @@ body {
 }
 
 .image-container img {
-    margin-right: 10px;
     width: 60px;
     height: 60px;
-    /* Adjust the margin as needed */
+}
+
+.header {
+    padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
     padding: 0;
 }
 
@@ -32,7 +28,31 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    border-radius: 10px;
+    color: #050505;
+    font-size: 18px;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+.forma button {
+    height: 60px;
+    width: 120px;
+    font-size: 16px;
+    margin: 20px;
+    background-color: #bab5b5;
+    color: rgb(12, 12, 12);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: aqua;
 }
 
 .image-ref {
@@ -44,7 +64,11 @@ nav ul li a {
     margin-right: 10px;
     width: 60px;
     height: 60px;
-    /* Adjust the margin as needed */
+}
+
+.image-ref h3 {
+    font-size: 30px;
+    color: #050505;
 }
 
 table {
@@ -52,6 +76,7 @@ table {
     margin-right: auto;
     border-collapse: collapse;
     width: 90%;
+    height: 80%;
 }
 
 th,
@@ -59,29 +84,19 @@ td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
+    font-size: 22px
+}
+
+th:hover,
+td:hover {
+    background-color: aqua;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #bab5b5;
 }
 
 td img {
     width: 20px;
     height: 20px;
-}
-
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }

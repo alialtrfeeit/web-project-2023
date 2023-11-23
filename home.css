@@ -28,18 +28,24 @@
         
         nav ul li a {
             text-decoration: none;
+            border-radius: 10px;
             color: #050505;
             font-size: 18px;
+            padding: 8px;
+        }
+        
+        nav ul li a:hover {
+            background-color: aqua;
         }
         
         .button1 {
             border-radius: 30px;
             height: 150px;
             width: 900px;
-            background-color: #bab5b5;
             cursor: pointer;
             font-size: 50px;
             border: none;
+            background-image: linear-gradient(to right, #575656, #e7e6e6);
         }
         
         .button2,
@@ -54,12 +60,12 @@
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            background-image: linear-gradient(to right, #575656, #e7e6e6);
         }
         
         .button2:hover,
         .button3:hover,
         .button4:hover,
         .button1:hover {
-            background-color: #6a9272;
-            /* Modify the background color on hover as needed */
+            background-color: rgba(128, 128, 128, 0.4);
         }
