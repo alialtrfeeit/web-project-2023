@@ -54,3 +54,8 @@ body {
     padding: 5px 8px;
     text-decoration: none;
 }
+
+div p {
+    text-align: right;
+    font-size: 30px;
+}
