@@ -1,61 +1,93 @@
-body {
-    display: grid;
-    place-items: center;
-}
-
-.cont {
-    width: 50%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.card {
-    border: 2px solid #13544e;
-    width: 90%;
-    height: 60%;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
-}
-
-.flex {
-    display: flex;
-}
-
-.sub_card {
-    width: 300px;
-    border: 1px solid #13544e;
-    border-radius: 10px;
-    margin: 3%;
-    padding: 2%;
-    text-align: left;
-    box-shadow: 1px 1px 5px black;
-}
-
-.sub_card img {
-    width: 50%;
-    height: 50%;
-}
-
-.sub_card:hover {
-    background-color: #13544e;
-    color: #fff;
-    cursor: cell;
-}
-
-.a {
-    background-color: #fff;
-    border: 2px solid #13544e;
-    color: #13544e;
-    border-radius: 20px;
-    font-size: 15px;
-    padding: 5px 8px;
-    text-decoration: none;
-}
-
-div p {
-    text-align: right;
-    font-size: 30px;
-}
+ .image-container {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .image-container img {
+     width: 60px;
+     height: 60px;
+ }
+ 
+ .header {
+     padding: 10px;
+ }
+ 
+ nav ul {
+     padding: 0;
+ }
+ 
+ nav ul li {
+     display: inline;
+     margin-right: 10px;
+ }
+ 
+ nav ul li a {
+     text-decoration: none;
+     border-radius: 10px;
+     color: #050505;
+     font-size: 18px;
+     padding: 8px;
+ }
+ 
+ nav ul li a:hover {
+     background-color: aqua;
+ }
+ 
+ .cont {
+     width: 50%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .card {
+     border: 2px solid #13544e;
+     width: 90%;
+     height: 60%;
+     display: grid;
+     place-items: center;
+     border-radius: 10px;
+ }
+ 
+ .flex {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .sub_card {
+     width: 50%px;
+     border: 1px solid #13544e;
+     border-radius: 10px;
+     margin: 3%;
+     padding: 2%;
+     text-align: left;
+     box-shadow: 1px 1px 5px black;
+ }
+ 
+ .sub_card img {
+     width: 50%;
+     height: 50%;
+ }
+ 
+ .sub_card:hover {
+     background-color: #13544e;
+     color: #fff;
+     cursor: cell;
+ }
+ 
+ .a {
+     background-color: #fff;
+     border: 2px solid #13544e;
+     color: #13544e;
+     border-radius: 20px;
+     font-size: 15px;
+     padding: 5px 8px;
+     text-decoration: none;
+ }
+ 
+ div p {
+     text-align: right;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+ }
