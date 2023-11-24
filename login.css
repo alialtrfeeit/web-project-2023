@@ -49,15 +49,6 @@ body {
     background-color: #f8f8f8;
 }
 
-a {
-    color: #13544e;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #2b897f;
-}
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -99,12 +90,6 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-.options {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 label[for="remember-me"] {
     margin-right: auto;
     font-size: 16px;
@@ -118,8 +103,7 @@ label[for="remember-me"] {
     margin-left: auto;
 }
 
-input[type="submit"],
-button.google-login {
+input[type="submit"] {
     display: block;
     margin-top: 20px;
     background-color: #13544e;
@@ -135,23 +119,6 @@ button.google-login {
 input[type="submit"]:hover,
 button.google-login:hover {
     background-color: #2b9086;
-}
-
-.or-separator {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.or-separator span {
-    flex: 1;
-    height: 1px;
-    background-color: #ccc;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
@@ -224,11 +191,4 @@ label[for="remember-me"] {
     margin-right: auto;
     font-size: 16px;
     color: #333;
-}
-
-.forgot-password {
-    color: #13544e;
-    font-size: 16px;
-    text-decoration: none;
-    margin-left: auto;
 }
