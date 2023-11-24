@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="sign.css">
+</head>
+
+<body dir="rtl">
+    <div dir="rtl" class="image-container"><img src=" C:/xamp/htdocs/web%20project%202023/imeges/images.png" alt="">
+
+        <h3>
+            قسم شؤون الاقسام الداخلية
+        </h3>
+    </div>
+
+    <header dir="rtl" class="header">
+
+        <nav>
+            <ul>
+                <li><a style="background-color: #bab5b5;" href=" C:/xamp/htdocs/web%20project%202023/home.html">الصفحة الرئيسية</a></li>
+                <li><a href=" C:/xamp/htdocs/web%20project%202023/managment.html">الادارة</a></li>
+                <li><a href=" C:/xamp/htdocs/web%20project%202023/registration2.html">التسجيل</a></li>
+                <li><a href=" C:/xamp/htdocs/web%20project%202023/equip2.html">التجهيز</a></li>
+                <li><a href="  C:/xamp/htdocs/web%20project%202023/Maintenance2.html">الصيانة</a></li>
+
+            </ul>
+        </nav>
+        <hr>
+
+    </header>
+
+    <section class="hero">
+        <div align="center" class="container1">
+            <h1>Sign as Client</h1>
+        </div>
+    </section>
+
+    <section align="center" class="form">
+        <div class="container">
+            <form dir="rtl" action="client.php" method="post">
+
+
+                <label> الاسم الاول</label>
+                <input type="text" name="firstname" required>
+
+                <label> الاسم الاخير</label>
+                <input type="text" name="lastname" required>
+
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+
+                <label>الصلاحيات</label>
+                <select name="country" required>
+				
+ 				<option >مدير</option>
+				<option > مسؤول تجهيز</option>
+				<option >مسؤول صيانة</option>
+				<option >مسؤول تسجيل</option>
+							    
+                </select>
+
+                <button id="button" class="last" type="submit">Sign UP</button>
+
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
