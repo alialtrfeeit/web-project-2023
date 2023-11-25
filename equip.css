@@ -119,15 +119,16 @@ form {
 }
 
 label {
-    display: block;
+    /* display: block; */
     margin-bottom: 10px;
     color: #333;
     font-size: 18px;
 }
 
 input[type="email"],
-input[type="password"] {
-    display: block;
+input[type="password"],
+select {
+    /* display: block; */
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -143,11 +144,12 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-label[for="remember-me"] {
+
+/* label[for="remember-me"] {
     margin-right: auto;
     font-size: 16px;
     color: #333;
-}
+} */
 
 .forgot-password {
     color: #13544e;
