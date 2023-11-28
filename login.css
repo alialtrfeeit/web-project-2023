@@ -116,8 +116,7 @@ input[type="submit"] {
     width: 100%;
 }
 
-input[type="submit"]:hover,
-button.google-login:hover {
+input[type="submit"]:hover {
     background-color: #2b9086;
 }
 
