@@ -1,4 +1,5 @@
         body {
+            height: 100vh;
             font-family: Arial, sans-serif;
             line-height: 1;
         }
@@ -38,6 +39,12 @@
             background-color: aqua;
         }
         
+        .divbutton {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
         .button1 {
             border-radius: 30px;
             height: 150px;
@@ -68,4 +75,11 @@
         .button4:hover,
         .button1:hover {
             background-color: rgba(128, 128, 128, 0.4);
+        }
+        
+        .div1 {
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
