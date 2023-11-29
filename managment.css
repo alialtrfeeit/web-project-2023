@@ -38,6 +38,10 @@ nav ul li a:hover {
     background-color: aqua;
 }
 
+.log {
+    float: left;
+}
+
 .forma button {
     height: 60px;
     width: 120px;
