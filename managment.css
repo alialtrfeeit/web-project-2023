@@ -83,6 +83,10 @@ table {
     height: 80%;
 }
 
+.last_table {
+    margin-bottom: 100px;
+}
+
 th,
 td {
     border: 1px solid black;
