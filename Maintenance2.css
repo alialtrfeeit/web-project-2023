@@ -107,3 +107,7 @@ td a {
     font-weight: bold;
     text-decoration: none;
 }
+
+.last_table {
+    margin-bottom: 100px;
+}
