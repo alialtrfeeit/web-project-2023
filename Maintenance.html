@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Maintenance</title>
     <link rel="stylesheet" type="text/css" href="Maintenance.css">
 </head>
@@ -35,14 +37,14 @@
     <div class="container" dir="rtl">
         <h4>استمارة الصيانة </h4>
 
-        <form>
+        <form action="Maintenance.php" method="post">
 
             <label>اسم الطالب</label>
-            <input type="text" id="text" name="text" required>
+            <input type="text" id="text" name="students_name" required>
 
 
             <label>      رقم القطاع</label>
-            <select required>
+            <select type="text" name="Sector_number" required>
             <option>اختر من القائمة </option>
             <option>1</option>
             <option>2</option>
@@ -55,7 +57,7 @@
 
 
             <label>       رقم الغرفة</label>
-            <select required>
+            <select type="text" name="room_number" required>
             <option>اختر من القائمة </option>
             <option>1</option>
             <option>2</option>
@@ -82,7 +84,7 @@
 
 
             <label>    نوع الصيانة</label>
-            <select required>
+            <select type="text" name="Maintenance_Type" required>
             <option>اختر من القائمة </option>
             <option>صيانة صحيات</option>
             <option>صيانة لوكرات</option>
@@ -93,7 +95,7 @@
 
 
             <label>      الملاحظات</label>
-            <textarea name="" id="" cols="51" rows=" 4"></textarea>
+            <textarea type="textarea" name="Notes" id="" cols="51" rows=" 4"></textarea>
 
 
 

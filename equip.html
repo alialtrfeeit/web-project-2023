@@ -2,13 +2,15 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>equip</title>
     <link rel="stylesheet" type="text/css" href="equip.css">
 </head>
 
 <body>
 
-    <div dir="rtl" class="image-container"><img src=" C:/xamp/htdocs/web%20project%202023/imeges/images.png" alt="">
+    <div dir="rtl" class="image-container"><img src="imeges/images.png" alt="">
 
         <h3>
             قسم شؤون الاقسام الداخلية
@@ -35,14 +37,14 @@
     <div class="container" dir="rtl">
         <h4>استمارة التجهيز </h4>
 
-        <form>
+        <form action="equip2.php" method="post">
 
             <label>اسم المادة</label>
-            <input type="text" id="text" name="text" required>
+            <input type="text" id="text" name="Subject_Name" required>
 
 
             <label>    عدد المواد</label>
-            <select required>
+            <select type="text" name="Number_of_materials" required>
             <option>اختر من القائمة </option>
             <option>1</option>
             <option>2</option>
@@ -58,7 +60,7 @@
 
 
             <label>    نوع الصيانة</label>
-            <select required>
+            <select type="text" name="Maintenance_Type" required>
             <option>اختر من القائمة </option>
             <option>صيانة صحيات</option>
             <option>صيانة لوكرات</option>
@@ -69,11 +71,11 @@
 
 
             <label>   مسؤول الصيانة</label>
-            <input type="text" id="text" name="text" required>
+            <input type="text" id="text" name="maintenance_manager" required>
 
 
             <label>      الملاحظات</label>
-            <textarea name="" id="" cols="51" rows=" 4"></textarea>
+            <textarea type="text" name="Notes" id="" cols="51" rows=" 4"></textarea>
 
 
             <input type="submit" value="ارسال">
