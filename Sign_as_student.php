@@ -20,9 +20,12 @@ $password = $_POST['password'];
 $sql = "INSERT INTO Sign_as_student ( ferst_name , last_name , email, password )
          VALUES ( '$firstname' , '$lastname' , '$email' , '$password');";
 
-$sql .= "INSERT INTO login  (email, passwordd)
-        SELECT  email ,  password FROM Sign_as_student
-        WHERE email = '$email' AND  password = '$password'; ";
+$sql .= "INSERT INTO login  (email, password)
+VALUES ('$email' , '$password');";
+
+// $sql .= "INSERT INTO login  (email, passwordd)
+//         SELECT  email ,  password FROM Sign_as_student
+//         WHERE email = '$email' AND  password = '$password'; ";
 
 //check sql process
 if (mysqli_multi_query($conn, $sql)) {
