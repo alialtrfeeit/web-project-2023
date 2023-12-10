@@ -21,9 +21,11 @@ $previleg = $_POST['previleg'];
 $sql = "INSERT INTO Sign_as_employee ( ferst_name , last_name , email, password , previleg)
          VALUES ( '$firstname' , '$lastname' , '$email' , '$password' , '$previleg');";
 
-$sql .= "INSERT INTO login  (email, passwordd)
-        SELECT  email ,  password FROM sign_as_employee
-        WHERE email = '$email' AND  password = '$password'; ";
+$sql .= "INSERT INTO login  (email, password)
+         VALUES ('$email' , '$password');";
+
+        // -- SELECT  email ,  password FROM sign_as_employee
+        // -- WHERE email = '$email' AND  password = '$password'; ";
 
 //check sql process
 if (mysqli_multi_query($conn, $sql)) {

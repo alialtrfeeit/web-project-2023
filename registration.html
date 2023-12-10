@@ -45,7 +45,7 @@
 
 
 
-    <form action="/submit">
+    <form action="more_info.php" method="post">
 
         <div class="mainsubfrom">
             <div class="subform">
@@ -55,10 +55,10 @@
                 <div class="flex-container">
                     <div class="form-group1">
                         <label for="marital_status">  الجنس:</label>
-                        <select id="marital_status" name="marital_status" required>
-                        <option value="single">اختر من القائمة</option>
-                        <option value="married">ذكر</option>
-                        <option value="divorced"> انثى</option>
+                        <select id="marital_status" name="gender" required>
+                            <option value="single">اختر من القائمة</option>
+                            <option value="ذكر">ذكر</option>
+                            <option value="انثى"> انثى</option>
                         </select><br>
                     </div>
 
@@ -69,27 +69,27 @@
 
                     <div class="form-group">
                         <label for="student_name">اسم الطالب:</label>
-                        <input type="text" id="student_name" name="student_name" required><br>
+                        <input type="text" id="student_name" name="students_name" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="father_name">اسم الاب:</label>
-                        <input type="text" id="father_name" name="father_name" required><br>
+                        <input type="text" id="father_name" name="Fathers_Name" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandmother_name">اسم الجد:</label>
-                        <input type="text" id="grandmother_name" name="grandmother_name" required><br>
+                        <input type="text" id="grandmother_name" name="Grandfather_name" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">اسم جد الاب:</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="text" id="grandfather_name" name="Fathers_grandfathers_name" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">اللقب:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="text" id="title" name="Title" required><br>
                     </div>
                 </div>
 
@@ -101,15 +101,15 @@
                         <label for="marital_status">الحالة الاجتماعية:</label>
                         <select id="marital_status" name="marital_status" required>
                         <option value="single">اختر من القائمة </option>
-                        <option value="married">متزوج</option>
-                        <option value="divorced">اعزب</option>
+                        <option value="متزوج">متزوج</option>
+                        <option value="اعزب">اعزب</option>
                         </select>
                         <br>
                     </div>
 
                     <div class="form-group">
                         <label for="father_name">رقم الهوية:</label>
-                        <input type="text" id="father_name" name="father_name" required><br>
+                        <input type="number" id="father_name" name="ID_Number" required><br>
                     </div>
 
                 </div>
@@ -120,17 +120,17 @@
 
                     <div class="form-group">
                         <label for="grandmother_name">اسم دائرة الاحوال:</label>
-                        <input type="text" id="grandmother_name" name="grandmother_name" required><br>
+                        <input type="text" id="grandmother_name" name="Name_of_circle_people" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  السجل  :</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="number" id="grandfather_name" name="Record" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">الصحيفة:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="number" id="title" name="newspaper" required><br>
                     </div>
 
                 </div>
@@ -139,12 +139,12 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandfather_name">  رقم البطاقة التموينية  :</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="number" id="grandfather_name" name="National_card_number" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">رقم بطاقة السكن:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="number" id="title" name="Residence_card_number" required><br>
                     </div>
 
                 </div>
@@ -153,36 +153,36 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandfather_name">   تاريخ الاولادة :</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="date" id="grandfather_name" name="birth_date" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">     مكان الاولادة:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="text" id="title" name="place_of_birth" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="marital_status">   المحافظة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" type="text" name="Governorate" required>
                             <option value="single">اختر من القائمة </option>
-                            <option value="married">كربلاء المقدسة</option>
-                            <option value="divorced">النجف الاشرف</option>
-                            <option value="married">بغداد</option>
-                            <option value="divorced">البصرة</option>
-                            <option value="married">المثنى</option>
-                            <option value="divorced">القادسية</option>
-                            <option value="married">ذي قار</option>
-                            <option value="divorced">بابل</option>
-                            <option value="married">اربيل</option>
-                            <option value="divorced">الانبار</option>
-                            <option value="married">الموصل</option>
-                            <option value="divorced">ديالى</option>
-                            <option value="married">صلاح الدين</option>
-                            <option value="divorced">كركوك</option>
-                            <option value="married">ميسان</option>
-                            <option value="divorced">واسط</option>
-                            <option value="married">دهوك</option>
-                            <option value="divorced">السليمانية</option>
+                            <option value="كربلاءالمقدسة">كربلاء المقدسة</option>
+                            <option value="النجف الاشرف">النجف الاشرف</option>
+                            <option value="بغداد">بغداد</option>
+                            <option value="البصرة">البصرة</option>
+                            <option value="المثنى">المثنى</option>
+                            <option value="القادسية">القادسية</option>
+                            <option value="ذي قار">ذي قار</option>
+                            <option value="بابل">بابل</option>
+                            <option value="اربيل">اربيل</option>
+                            <option value="الانبار">الانبار</option>
+                            <option value="الموصل">الموصل</option>
+                            <option value="ديالى">ديالى</option>
+                            <option value="   صلاح الدين ">صلاح الدين</option>
+                            <option value="كركوك">كركوك</option>
+                            <option value="ميسان">ميسان</option>
+                            <option value="واسط">واسط</option>
+                            <option value="دهوك">دهوك</option>
+                            <option value="السليمانية">السليمانية</option>
                         </select><br>
                     </div>
                 </div>
@@ -192,22 +192,22 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="father_name">  القظاء:</label>
-                        <input type="text" id="father_name" name="father_name" required><br>
+                        <input type="text" id="father_name" name="Judiciary" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandmother_name">     الناحية:</label>
-                        <input type="text" id="grandmother_name" name="grandmother_name" required><br>
+                        <input type="text" id="grandmother_name" name="alnaheea" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  الحي  :</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="text" id="grandfather_name" name="nearest_function_point" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">اقرب نقطة دالة:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="text" id="title" name="nearest_function_point" required><br>
                     </div>
 
                 </div>
@@ -217,17 +217,17 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandmother_name">     اسم المختار:</label>
-                        <input type="text" id="grandmother_name" name="grandmother_name" required><br>
+                        <input type="text" id="grandmother_name" name="Chosen_name" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  رقم هاتف الطالب  :</label>
-                        <input type="text" id="grandfather_name" name="grandfather_name" required><br>
+                        <input type="tel" id="grandfather_name" name="Student_phone_number" required><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">      رقم هاتف ولي امر الطالب:</label>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="tel" id="title" name="Phone_number_of_the_students_guardian" required><br>
                     </div>
 
                 </div>
@@ -237,27 +237,28 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="marital_status">   الكلية/القسم:</label>
-                        <select id="marital_status" name="marital_status" required>
-                            <option value="single">اختر من القائمة </option>
-                            <option value="married">كلية علوم الحاسوب وتكنلوجيا المعلومات/ قسم تكنلوجيا المعلومات
+                        <select id="marital_status" name="College_department" required>
+                            <option value=" ">اختر من القائمة </option>
+                            <option value="كلية علوم الحاسوب وتكنلوجيا المعلومات/ قسم تكنلوجيا المعلومات
+                            ">كلية علوم الحاسوب وتكنلوجيا المعلومات/ قسم تكنلوجيا المعلومات
                             </option>
-                            <option value="married"> كلية الطب القسم العام
+                            <option value="كلية الطب القسم العام "> كلية الطب القسم العام
                             </option>
-                            <option value="divorced">كلية طب الاسنان / القسم العام
+                            <option value="كلية طب الاسنان / القسم العام">كلية طب الاسنان / القسم العام
                             </option>
-                            <option value="married">كلية الصيدلة القسم العام
+                            <option value="كلية الصيدلة القسم العام">كلية الصيدلة القسم العام
                             </option>
-                            <option value="divorced">كلية التمريض / القسم العام
+                            <option value="كلية التمريض / القسم العام">كلية التمريض / القسم العام
                             </option>
-                            <option value="married">كلية العلوم الطبية التطبيقية / تحليلات مرضية
+                            <option value="كلية العلوم الطبية التطبيقية / تحليلات مرضية">كلية العلوم الطبية التطبيقية / تحليلات مرضية
                             </option>
-                            <option value="divorced">كلية العلوم الطبية التطبيقية / صحة بيئية
+                            <option value="كلية العلوم الطبية التطبيقية / صحة بيئية">كلية العلوم الطبية التطبيقية / صحة بيئية
                             </option>
-                            <option value="married">كلية الطب البيطري / القسم العام
+                            <option value="كلية الطب البيطري / القسم العام">كلية الطب البيطري / القسم العام
                             </option>
-                            <option value="divorced">كلية الهندسة / قسم الهندسة المدنية
+                            <option value="كلية الهندسة / قسم الهندسة المدنية">كلية الهندسة / قسم الهندسة المدنية
                             </option>
-                            <option value="married">كلية الهندسة / قسم هندسة النفط والبتروكيمياويات
+                            <option value="كلية الهندسة / قسم هندسة النفط والبتروكيمياويات">كلية الهندسة / قسم هندسة النفط والبتروكيمياويات
                             </option>
                             <option value="divorced">كلية الهندسة / قسم هندسة العمارة
                             </option>
@@ -333,7 +334,7 @@
 
                     <div class="form-group">
                         <label for="marital_status">   المرحلة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" name="stage" required>
                             <option value="single">اختر من القائمة </option>
                             <option value="married">مرحلة اولى</option>
                             <option value="divorced">مرحلة ثانية</option>
@@ -348,7 +349,7 @@
 
                     <div class="form-group">
                         <label for="marital_status">   النتيجة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" name="result" required>
                             <option value="single">اختر من القائمة </option>
                             <option value="married">   ناجح دور اول </option>
                             <option value="divorced">ناجح دور ثاني</option>
@@ -365,7 +366,7 @@
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="marital_status">   الدراسة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" name="study" required>
                             <option value="single">اختر من القائمة</option>
                             <option value="married">الدراسة الصباحية</option>
                             <option value="divorced">الدراسة المسائية</option>
@@ -376,7 +377,7 @@
 
                     <div class="form-group">
                         <label for="marital_status">   نوع الدراسة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" name="Type_of_study" required>
                             <option value="single">اختر من القائمة</option>
                             <option value="married">دبلوم</option>
                             <option value="divorced">بكلوريوس</option>
@@ -389,7 +390,7 @@
 
                     <div class="form-group">
                         <label for="marital_status">   صنف الدراسة:</label>
-                        <select id="marital_status" name="marital_status" required>
+                        <select id="marital_status" name="Classify_the_study" required>
                             <option value="single">اختر من القائمة</option>
                             <option value="married">نفقة عامة</option>
                             <option value="divorced">نفقة خاصة</option>

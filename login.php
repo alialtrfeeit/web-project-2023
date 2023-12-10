@@ -18,13 +18,13 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 // query the database to check if the email and password match
-$sql = "SELECT * FROM login_tb WHERE email='$email' AND passwordd='$password'";
+$sql = "SELECT * FROM login WHERE email='$email' AND password='$password'";
 $result = mysqli_query($conn, $sql);
 
 // check if there is a match
 if (mysqli_num_rows($result) == 1) {
 
-  header("location: HOME.php");
+  header("location: home.html");
   exit;
 
 } else {
