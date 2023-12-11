@@ -34,7 +34,7 @@
  }
  
  nav ul li a:hover {
-     background-color: aqua;
+     background-color: #bab5b5;
  }
  
  .image-ref {
@@ -108,18 +108,18 @@
      align-items: center;
      margin-bottom: 20px;
  }
- 
- .forgot-password {
+ /* .forgot-password {
      color: #13544e;
      font-size: 16px;
      text-decoration: none;
      margin-left: auto;
  }
+  */
  
  input[type="submit"] {
      display: block;
      margin-top: 20px;
-     background-color: #13544e;
+     background-color: #8a8888;
      color: #fff;
      border: none;
      border-radius: 5px;
@@ -130,7 +130,7 @@
  }
  
  input[type="submit"]:hover {
-     background-color: #2b9086;
+     background-color: #575656;
  }
  
  body {

@@ -36,7 +36,7 @@
         }
         
         nav ul li a:hover {
-            background-color: aqua;
+            background-color: #bab5b5;
         }
         
         .divbutton {
@@ -62,20 +62,19 @@
             width: 230px;
             font-size: 30px;
             margin: 20px;
-            background-color: #bab5b5;
+            /* background-color: #bab5b5; */
             color: rgb(12, 12, 12);
             border: none;
             border-radius: 20px;
             cursor: pointer;
             background-image: linear-gradient(to right, #575656, #e7e6e6);
         }
-        
-        .button2:hover,
+        /* .button2:hover,
         .button3:hover,
         .button4:hover,
         .button1:hover {
-            background-color: rgba(128, 128, 128, 0.4);
-        }
+            background-color: #dddddd;
+        } */
         
         .div1 {
             height: 70%;

@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: aqua;
+    background-color: #8a8888;
 }
 
 body {
@@ -97,7 +97,7 @@ label[for="remember-me"] {
 }
 
 .forgot-password {
-    color: #13544e;
+    color: #575656;
     font-size: 16px;
     text-decoration: none;
     margin-left: auto;
@@ -106,7 +106,7 @@ label[for="remember-me"] {
 input[type="submit"] {
     display: block;
     margin-top: 20px;
-    background-color: #13544e;
+    background-color: #8a8888;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -117,7 +117,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #2b9086;
+    background-color: #575656;
 }
 
 body {
@@ -131,12 +131,12 @@ body {
 }
 
 a {
-    color: #13544e;
+    color: #050505;
     text-decoration: none;
 }
 
 a:hover {
-    color: #2a8d83;
+    color: #8a8888;
 }
 
 .container {
@@ -186,8 +186,9 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-label[for="remember-me"] {
+
+/* label[for="remember-me"] {
     margin-right: auto;
     font-size: 16px;
     color: #333;
-}
+} */

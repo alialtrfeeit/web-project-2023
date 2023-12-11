@@ -35,7 +35,7 @@
         }
         
         nav ul li a:hover {
-            background-color: aqua;
+            background-color: #bab5b5;
         }
         
         .forma button {
@@ -52,7 +52,7 @@
         }
         
         button:hover {
-            background-color: aqua;
+            background-color: #8a8888;
         }
         
         .image-ref {
@@ -81,15 +81,14 @@
         
         th,
         td {
-            border: 1px solid black;
+            border: 1px solid rgb(160, 159, 159);
             padding: 8px;
             text-align: center;
             font-size: 22px
         }
         
-        th:hover,
-        td:hover {
-            background-color: aqua;
+        tr:hover {
+            background-color: #dddddd;
         }
         
         th {

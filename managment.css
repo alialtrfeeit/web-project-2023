@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: aqua;
+    background-color: #bab5b5;
 }
 
 .log {
@@ -55,9 +55,10 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-button:hover {
+
+/* button:hover {
     background-color: #6a9272
-}
+} */
 
 .image-ref {
     display: flex;
@@ -95,9 +96,8 @@ td {
     font-size: 22px
 }
 
-th:hover,
-td:hover {
-    background-color: aqua;
+tr:hover {
+    background-color: #dddddd;
 }
 
 th {
