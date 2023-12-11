@@ -56,6 +56,39 @@
             <th> حذف</th>
             <th> تعديل</th>
         </tr>
+
+
+        <!-- <?php
+             $servername = "localhost:3306";   
+            $username = "root";
+            $password = "";
+            $db = "shms";
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+         $sql = "SELECT * FROM  equip2";
+        $result = $conn->query($sql);
+
+         while($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["ID"] . "</td>";
+            echo "<td>" . $row["Subject_Name"] . "</td>";
+            echo "<td>" . $row["maintenance_manager"] . "</td>";
+            echo "<td>" . $row["Maintenance_Type"] . "</td>";
+            echo "<td>" . $row["Number_of_materials"] . "</td>";
+            echo "<td>" . $row["Notes"] . "</td>";
+            echo "<td>" . $row["condition"] . "</td>";
+            echo '<td> <img src="imeges/trash.png" alt=""></td>';
+            echo '<td> <img src="imeges/pen.png" alt=""> </td>';
+            echo "</tr>";
+        }
+
+        $conn->close();
+        ?> -->
         <tr>
             <td> 1</td>
             <td> مصباح W40</td>
