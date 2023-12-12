@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>equip2</title>
     <link rel="stylesheet" type="text/css" href="tabel.css">
 
@@ -26,7 +26,7 @@
             <li><a href="home.html">الصفحة الرئيسية</a></li>
             <li><a href="managment.html">الادارة</a></li>
             <li><a href="registration2.html">التسجيل</a></li>
-            <li><a style="background-color: #bab5b5;" href="equip2.html">التجهيز</a></li>
+            <li><a style="background-color: #bab5b5;" href="equip.php">التجهيز</a></li>
             <li><a href="Maintenance2.html">الصيانة</a></li>
 
         </ul>
@@ -69,6 +69,7 @@
             $db = "shms";
 
         $conn = new mysqli($servername, $username, $password, $db);
+        $conn->set_charset("utf8mb4");
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
