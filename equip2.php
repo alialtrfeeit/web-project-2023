@@ -31,7 +31,7 @@ if (mysqli_multi_query($conn, $sql)) {
 //  header("location:refesh managment.html");
 //  exit;
 echo "<script>alert('add information successful')</script>";
- header("refresh:2;url = equip2.php");
+ header("refresh:2;url =equip2 (2).php");
  exit;
 
 } else {
