@@ -105,6 +105,11 @@ td {
     float: left;
 }
 
+
+/* tr:hover {
+    background-color: #dddddd;
+} */
+
 th {
     background-color: #bab5b5;
 }
@@ -120,5 +125,11 @@ tr:nth-child(even) {
 
 
 /* td:hover {
-    transform: scale(2.2);
+    transform: scale(1.2);
 } */
+
+tr:hover {
+    border: 2px solid #080808;
+    box-shadow: 1px 1px 7px black;
+    transition: 0.3s;
+}
