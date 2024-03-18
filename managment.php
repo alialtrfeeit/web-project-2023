@@ -43,7 +43,8 @@
         <h3>
             ادارة الصيانة </h3>
     </div>
-    <table>
+    
+    <table class="last_table">
         <tr>
             <th>N </th>
             <th> نوع الصيانة </th>
@@ -55,48 +56,56 @@
             <th> حذف</th>
             <th> تعديل</th>
         </tr>
+
         <?php
-        $servername = "localhost:3306";   
-       $username = "root";
-       $password = "";
-       $db = "shms";
+             $servername = "localhost:3306";   
+            $username = "root";
+            $password = "";
+            $db = "shms";
 
-   $conn = new mysqli($servername, $username, $password, $db);
-   $conn->set_charset("utf8mb4");
+        $conn = new mysqli($servername, $username, $password, $db);
+        $conn->set_charset("utf8mb4");
 
-   if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
-   }
-
-    $sql = "SELECT * FROM  maintenance2";
-   $result = $conn->query($sql);
-
-
-       if (!$result) {
-           die("Error in SQL query: " . $conn->error);
-       }
-
-       while($row = $result->fetch_assoc()) {
-           echo "<tr>";
-           echo "<td>" . $row["ID"] . "</td>";
-           echo "<td>" . $row["students_name"] . "</td>";
-           echo "<td>" . $row["Sector_number"] . "</td>";
-           echo "<td>" . $row["room_number"] . "</td>";
-           echo "<td>" . $row["Maintenance_Type"] . "</td>";
-           echo "<td>" . $row["Notes"] . "</td>";
-           echo "<td>" . $row["the_condition"] . "</td>";
-           echo '<td> <img src="imeges/trash.png" alt=""></td>';
-           echo '<td> <img src="imeges/pen.png" alt=""> </td>';
-           echo "</tr>";
-
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
         }
 
+         $sql = "SELECT * FROM  maintenance2";
+        $result = $conn->query($sql);
 
-   
-    
+ 
+            if (!$result) {
+                die("Error in SQL query: " . $conn->error);
+            }
 
-   $conn->close();
-   ?>
+            while($row = $result->fetch_assoc()) {
+                ?> 
+
+
+                <tr> 
+                 <td> <?=$row["ID"]?>   </td> 
+                <td> <?=$row["students_name"]?>  </td>
+                 <td> <?=$row["Sector_number"]?>  </td> 
+                 <td> <?=$row["room_number"]?>  </td> 
+                <td> <?=$row["Maintenance_Type"]?>  </td> 
+                <td> <?=$row["Notes"]?>  </td>
+                <td>  <?=$row["the_condition"]?> </td> 
+                <td>   <a href="delete_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
+                <td>  <img src="imeges/pen.png" alt="">  </td>
+                  </tr> 
+
+                <?php
+ 
+
+             }
+
+
+        
+         
+
+        $conn->close();
+         ?>
+        
     </table>
 
 
