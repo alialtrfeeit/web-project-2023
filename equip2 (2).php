@@ -84,17 +84,22 @@
             }
 
             while($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . $row["ID"] . "</td>";
-                echo "<td>" . $row["Subject_Name"] . "</td>";
-                echo "<td>" . $row["maintenance_manager"] . "</td>";
-                echo "<td>" . $row["Maintenance_Type"] . "</td>";
-                echo "<td>" . $row["Number_of_materials"] . "</td>";
-                echo "<td>" . $row["Notes"] . "</td>";
-                echo "<td>" . $row["condition"] . "</td>";
-                echo '<td> <img src="imeges/trash.png" alt=""></td>';
-                echo '<td> <img src="imeges/pen.png" alt=""> </td>';
-                echo "</tr>";
+                ?> 
+
+
+                <tr> 
+                 <td> <?=$row["ID"]?>   </td> 
+                <td> <?=$row["Subject_Name"]?>  </td>
+                 <td> <?=$row["maintenance_manager"]?>  </td> 
+                 <td> <?=$row["Maintenance_Type"]?>  </td> 
+                <td> <?=$row["Number_of_materials"]?>  </td> 
+                <td> <?=$row["Notes"]?>  </td>
+                <td>  <?=$row["condition"]?> </td> 
+                <td>   <a href="delete_equip2.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
+                <td>  <img src="imeges/pen.png" alt="">  </td>
+                  </tr> 
+
+                <?php
 
              }
 
@@ -103,7 +108,7 @@
          
 
         $conn->close();
-        ?>  
+         ?>
        
     </table>
 

@@ -27,7 +27,8 @@ if (mysqli_num_rows($result) == 1) {
   header("location: home.html");
   exit;
 
-} else {
+}
+ else {
 
   echo '<script>alert("error your data incorrect."); window.location.href = "login.html";</script>';
 

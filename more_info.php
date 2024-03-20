@@ -28,8 +28,6 @@ $birth_date = $_POST['birth_date'];
 $place_of_birth = $_POST['place_of_birth'];
 $Governorate = $_POST['Governorate'];
 $Judiciary = $_POST['Judiciary'];
-
-
 $alnaheea = $_POST['alnaheea'];
 $nearest_function_point = $_POST['nearest_function_point']; 
 $Chosen_name = $_POST['Chosen_name'];
@@ -57,16 +55,13 @@ $sql = "INSERT INTO  mor_info ( gender , students_name , Fathers_Name , Grandfat
            '$Phone_number_of_the_students_guardian' , '$College_department' , '$stage' , '$result' , '$study' ,
             '$Type_of_study' , '$Classify_the_study'); ";
 
-// $sql .= "INSERT INTO login  (email, passwordd)
-//         SELECT  email ,  password FROM sign_as_employee
-//         WHERE email = '$email' AND  password = '$password'; ";
+ 
 
 //check sql process
 if (mysqli_multi_query($conn, $sql)) {
   
 
-//  header("location:refesh managment.html");
-//  exit;
+ 
 echo "<script>alert('add information successful')</script>";
  header("refresh:2;url = registration2.html");
  exit;
