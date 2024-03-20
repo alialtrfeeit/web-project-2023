@@ -14,7 +14,9 @@ if(isset($_POST['submit'])) {
     extract($_POST);
     
     // Updating the record in the database
-    $sql = mysqli_query($conn, "UPDATE maintenance2 SET students_name = '$_studentsname', Sector_number = '$_Sectornumber', room_number = '$_roomnumber', Maintenance_Type = '$_MaintenanceType', Notes = '$_Notes' WHERE id = $id");
+    $sql = mysqli_query($conn, "UPDATE maintenance2 SET students_name = '$_studentsname', 
+                        Sector_number = '$_Sectornumber', room_number = '$_roomnumber', 
+                        Maintenance_Type = '$_MaintenanceType', Notes = '$_Notes' WHERE id = $id");
     
     // Redirecting back to the maintenance page after update
     if($sql) {
