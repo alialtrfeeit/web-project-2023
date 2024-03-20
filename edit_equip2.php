@@ -55,7 +55,7 @@ $row = $result->fetch_assoc()
     <div class="container" dir="rtl">
         <h4>استمارة التجهيز </h4>
 
-        <form action="equip2.php" method="post">
+        <form action="equip2 (2).php" method="post">
 
             <label>اسم المادة</label>
             <input type="text" id="text" name="Subject_Name" value="<?=$row['Subject_Name'] ?>">
@@ -92,26 +92,26 @@ $row = $result->fetch_assoc()
 
 
 <?php
- include('config.php');
+include('config.php');
 
 $conn = new mysqli($servername, $username, $password, $db);
-    $conn->set_charset("utf8mb4");
+$conn->set_charset("utf8mb4");
 
-if (isset ($_POST['submit'])){
-$Subject_Name    = $_POST['Subject_Name'];
-$maintenance_manager    = $_POST['maintenance_manager'];
-$Maintenance_Type      = $_POST['Maintenance_Type'];
-$Number_of_materials = $_POST['Number_of_materials'];
-$Notes           = $_POST['Notes'];
- 
-$sql2="UPDATE equip2 SET Subject_Name='$Subject_Name' , maintenance_manager='$maintenance_manager' 
-      Maintenance_Type='$Maintenance_Type' ,Number_of_materials='$Number_of_materials' ,Notes='$Notes' WHERE id ='$id' ";
- $conn->query($sql2);
- if ($conn->query($sql2) === TRUE) {
+if (isset($_POST['submit'])) {
+    $Subject_Name = $_POST['Subject_Name'];
+    $maintenance_manager = $_POST['maintenance_manager'];
+    $Maintenance_Type = $_POST['Maintenance_Type'];
+    $Number_of_materials = $_POST['Number_of_materials'];
+    $Notes = $_POST['Notes'];
+
+    $sql2 = "UPDATE equip2 SET Subject_Name='$Subject_Name', maintenance_manager='$maintenance_manager', Maintenance_Type='$Maintenance_Type', Number_of_materials='$Number_of_materials', Notes='$Notes' WHERE id ='$id'";
+
+    if ($conn->query($sql2) === TRUE) {
         echo "Record updated successfully";
     } else {
         echo "Error updating record: " . $conn->error;
     }
 }
-     $conn->close();
+
+$conn->close();
 ?>
