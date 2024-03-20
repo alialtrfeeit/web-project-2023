@@ -146,24 +146,23 @@
                 ?> 
 
 
-                <tr> 
-                 <td> <?=$row["ID"]?>   </td> 
+            <tr> 
+                <td> <?=$row["ID"]?>   </td> 
                 <td> <?=$row["students_name"]?>  </td>
-                 <td> <?=$row["Sector_number"]?>  </td> 
-                 <td> <?=$row["room_number"]?>  </td> 
+                <td> <?=$row["Sector_number"]?>  </td> 
+                <td> <?=$row["room_number"]?>  </td> 
                 <td> <?=$row["Maintenance_Type"]?>  </td> 
                 <td> <?=$row["Notes"]?>  </td>
                 <td>  <?=$row["the_condition"]?> </td> 
                 <td>   <a href="delete_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
-                <td>  <img src="imeges/pen.png" alt="">  </td>
-                  </tr> 
+                <td>   <a href="edit_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/pen.png" alt=""> </a>  </td>
+            </tr> 
 
                 <?php
 
              }
 
-
-        
+         
          
 
         $conn->close();
@@ -174,3 +173,14 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+              

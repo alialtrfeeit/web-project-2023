@@ -28,7 +28,7 @@ if (mysqli_multi_query($conn, $sql)) {
 
  
 echo "<script>alert('add information successful')</script>";
- header("refresh:2;url = Maintenance2.html");
+ header("refresh:1;url = Maintenance2.php");
  exit;
 
 } else {
