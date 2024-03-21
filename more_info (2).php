@@ -21,7 +21,7 @@
         <ul>
             <li><a href="home.html">الصفحة الرئيسية</a></li>
             <li><a href="managment.php"> الادارة  </a></li>
-            <li><a style="background-color: #bab5b5;" href="registration2.html">التسجيل</a></li>
+            <li><a style="background-color: #bab5b5;" href="registration2.html">معلومات الطلبة المسجلة</a></li>
             <li>
                 <a href="equip2 (2).php"> التجهيز</a>
             </li>
