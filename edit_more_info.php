@@ -16,7 +16,7 @@ if(isset($_GET['id'])) {
         $students_name = $_POST['students_name'];
         $Fathers_Name = $_POST['Fathers_Name'];
         $Grandfather_name = $_POST['Grandfather_name'];
-        $Fathers_grandfathers_name = $_POST['Fathers_grandfathers_name'];
+        $Fathers_Grandfathers_name = $_POST['Fathers_Grandfathers_name'];
         $Title = $_POST['Title'];
         $marital_status = $_POST['marital_status'];
         $ID_Number = $_POST['ID_Number'];
@@ -32,9 +32,9 @@ if(isset($_GET['id'])) {
         $alnaheea = $_POST['alnaheea'];
         $nearest_function_point = $_POST['nearest_function_point'];
         $nearest_function_point = $_POST['nearest_function_point'];
-        $Chosen_name = $_POST['Chosen_name'];
-        $Student_phone_number = $_POST['Student_phone_number'];
-        $Phone_number_of_the_students_guardian = $_POST['Phone_number_of_the_students_guardian'];
+        $Chosen_Name = $_POST['Chosen_Name'];
+        $Student_Phone_Number = $_POST['Student_Phone_Number'];
+        $Phone_Number_of_the_Students_Guardian = $_POST['Phone_Number_of_the_Students_Guardian'];
         $College_department = $_POST['College_department'];
         $stage = $_POST['stage'];
         $result = $_POST['result'];
@@ -49,7 +49,7 @@ if(isset($_GET['id'])) {
                         students_name = '$students_name',
                         Fathers_Name = '$Fathers_Name',
                         Grandfather_name = '$Grandfather_name',
-                        Fathers_grandfathers_name = '$Fathers_grandfathers_name',
+                        Fathers_Grandfathers_name = '$Fathers_Grandfathers_name',
                         Title = '$Title',
                         marital_status = '$marital_status',
                         ID_Number = '$ID_Number',
@@ -65,9 +65,9 @@ if(isset($_GET['id'])) {
                         alnaheea = '$alnaheea',
                         nearest_function_point = '$nearest_function_point',
                         nearest_function_point = '$nearest_function_point',
-                        Chosen_name = '$Chosen_name',
-                        Student_phone_number = '$Student_phone_number',
-                        Phone_number_of_the_students_guardian = '$Phone_number_of_the_students_guardian',
+                        Chosen_Name = '$Chosen_Name',
+                        Student_Phone_Number = '$Student_Phone_Number',
+                        Phone_Number_of_the_Students_Guardian = '$Phone_Number_of_the_Students_Guardian',
                         College_department = '$College_department',
                         stage = '$stage',
                         result = '$result',
@@ -77,7 +77,7 @@ if(isset($_GET['id'])) {
                          WHERE id = $id";
         $update_result = mysqli_query($conn, $update_sql);
 
-        if($update_result) {
+       if($update_result) {
             header("location:more_info (2).php");
             exit; // Stop further execution
         } else {
@@ -88,6 +88,12 @@ if(isset($_GET['id'])) {
     echo "ID parameter is missing.";
 }
 ?>
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -146,8 +152,7 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group1">
                         <label for="marital_status">  الجنس:</label>
-                        <input id="marital_status" name="gender" value="<?=$row['gender'] ?>"
->
+                        <input id="marital_status" name="gender" value="<?=$row['gender'] ?>">
                             <br>
                     </div>
 
@@ -158,32 +163,27 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="student_name">اسم الطالب:</label>
-                        <input type="text" id="student_name" name="students_name"  value="<?=$row['students_name'] ?>"
-><br>
+                        <input type="text" id="student_name" name="students_name" value="<?=$row['students_name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="father_name">اسم الاب:</label>
-                        <input type="text" id="father_name" name="Fathers_Name" value="<?=$row['Fathers_Name'] ?>"
-><br>
+                        <input type="text" id="father_name" name="Fathers_Name" value="<?=$row['Fathers_Name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandmother_name">اسم الجد:</label>
-                        <input type="text" id="grandmother_name" name="Grandfather_name"  value="<?=$row['Grandfather_name'] ?>"
-><br>
+                        <input type="text" id="grandmother_name" name="Grandfather_name" value="<?=$row['Grandfather_name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">اسم جد الاب:</label>
-                        <input type="text" id="grandfather_name" name="Fathers_grandfathers_name" value="<?=$row['Fathers_grandfathers_name'] ?>"
-><br>
+                        <input type="text" id="grandfather_name" name="Fathers_Grandfathers_name" value="<?=$row['Fathers_Grandfathers_name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">اللقب:</label>
-                        <input type="text" id="title" name="Title" value="<?=$row['Title'] ?>"
-><br>
+                        <input type="text" id="title" name="Title" value="<?=$row['Title'] ?>"><br>
                     </div>
                 </div>
 
@@ -193,16 +193,14 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="marital_status">الحالة الاجتماعية:</label>
-                        <input id="marital_status" name="marital_status" value="<?=$row['marital_status'] ?>"
->
+                        <input id="marital_status" name="marital_status" value="<?=$row['marital_status'] ?>">
                          
                         <br>
                     </div>
 
                     <div class="form-group">
                         <label for="father_name">رقم الهوية:</label>
-                        <input type="number" id="father_name" name="ID_Number" value="<?=$row['ID_Number'] ?>"
-><br>
+                        <input type="number" id="father_name" name="ID_Number" value="<?=$row['ID_Number'] ?>"><br>
                     </div>
 
                 </div>
@@ -213,20 +211,24 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="grandmother_name">اسم دائرة الاحوال:</label>
-                        <input type="text" id="grandmother_name" name="Name_of_circle_people" value="<?=$row['Name_of_circle_people'] ?>"
-><br>
+                        <input type="text" id="grandmother_name" name="Name_of_circle_people" value="<?=$row['Name_of_circle_people'] ?>"><br>
                     </div>
 
-                    <div class="form-group">
+
+
+
+
+
+
+
+                  <div class="form-group">
                         <label for="grandfather_name">  السجل  :</label>
-                        <input type="number" id="grandfather_name" name="Record" value="<?=$row['Record'] ?>"
-><br>
+                        <input type="number" id="grandfather_name" name="Record" value="<?=$row['Record'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">الصحيفة:</label>
-                        <input type="number" id="title" name="newspaper" value="<?=$row['newspaper'] ?>"
-><br>
+                        <input type="number" id="title" name="newspaper" value="<?=$row['newspaper'] ?>"><br>
                     </div>
 
                 </div>
@@ -235,14 +237,12 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandfather_name">  رقم البطاقة التموينية  :</label>
-                        <input type="number" id="grandfather_name" name="National_card_number" value="<?=$row['National_card_number'] ?>"
-><br>
+                        <input type="number" id="grandfather_name" name="National_card_number" value="<?=$row['National_card_number'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">رقم بطاقة السكن:</label>
-                        <input type="number" id="title" name="Residence_card_number" value="<?=$row['Residence_card_number'] ?>"
-><br>
+                        <input type="number" id="title" name="Residence_card_number" value="<?=$row['Residence_card_number'] ?>"><br>
                     </div>
 
                 </div>
@@ -251,20 +251,17 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandfather_name">   تاريخ الاولادة :</label>
-                        <input type="date" id="grandfather_name" name="birth_date" value="<?=$row['birth_date'] ?>"
-><br>
+                        <input type="date" id="grandfather_name" name="birth_date" value="<?=$row['birth_date'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">     مكان الاولادة:</label>
-                        <input type="text" id="title" name="place_of_birth" value="<?=$row['place_of_birth'] ?>"
-><br>
+                        <input type="text" id="title" name="place_of_birth" value="<?=$row['place_of_birth'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="marital_status">   المحافظة:</label>
-                        <input id="marital_status" type="text" name="Governorate" value="<?=$row['Governorate'] ?>"
->
+                        <input id="marital_status" type="text" name="Governorate" value="<?=$row['Governorate'] ?>">
                              <br>
                     </div>
                 </div>
@@ -274,26 +271,22 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="father_name">  القظاء:</label>
-                        <input type="text" id="father_name" name="Judiciary" value="<?=$row['Judiciary'] ?>"
-><br>
+                        <input type="text" id="father_name" name="Judiciary" value="<?=$row['Judiciary'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandmother_name">     الناحية:</label>
-                        <input type="text" id="grandmother_name" name="alnaheea" value="<?=$row['alnaheea'] ?>"
-><br>
+                        <input type="text" id="grandmother_name" name="alnaheea" value="<?=$row['alnaheea'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  الحي  :</label>
-                        <input type="text" id="grandfather_name" name="nearest_function_point" value="<?=$row['nearest_function_point'] ?>"
-><br>
+                        <input type="text" id="grandfather_name" name="nearest_function_point" value="<?=$row['nearest_function_point'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="title">اقرب نقطة دالة:</label>
-                        <input type="text" id="title" name="nearest_function_point" value="<?=$row['nearest_function_point'] ?>"
-><br>
+                        <input type="text" id="title" name="nearest_function_point" value="<?=$row['nearest_function_point'] ?>"><br>
                     </div>
 
                 </div>
@@ -303,20 +296,23 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandmother_name">     اسم المختار:</label>
-                        <input type="text" id="grandmother_name" name="Chosen_name" value="<?=$row['Chosen_nameChosen_name'] ?>"
-><br>
+                        <input type="text" id="grandmother_name" name="Chosen_Name" value="<?=$row['Chosen_Name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  رقم هاتف الطالب  :</label>
-                        <input type="tel" id="grandfather_name" name="Student_phone_number" value="<?=$row['Student_phone_number'] ?>"
-><br>
+                        <input type="tel" id="grandfather_name" name="Student_Phone_Number" value="<?=$row['Student_Phone_Number'] ?>"><br>
                     </div>
 
-                    <div class="form-group">
+
+
+
+
+
+
+                  <div class="form-group">
                         <label for="title">      رقم هاتف ولي امر الطالب:</label>
-                        <input type="tel" id="title" name="Phone_number_of_the_students_guardian" value="<?=$row['Phone_number_of_the_students_guardian'] ?>"
-><br>
+                        <input type="tel" id="title" name="Phone_Number_of_the_Students_Guardian" value="<?=$row['Phone_Number_of_the_Students_Guardian'] ?>"><br>
                     </div>
 
                 </div>
@@ -326,8 +322,7 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="marital_status">   الكلية/القسم:</label>
-                        <input id="marital_status" name="College_department" value="<?=$row['College_department'] ?>"
->
+                        <input id="marital_status" name="College_department" value="<?=$row['College_department'] ?>">
                              
                         <br>
                          <br>
@@ -335,8 +330,7 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="marital_status">   المرحلة:</label>
-                        <input id="marital_status" name="stage" value="<?=$row['stage'] ?>"
->
+                        <input id="marital_status" name="stage" value="<?=$row['stage'] ?>">
                              
                         <br>
                          <br>
@@ -344,8 +338,7 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="marital_status">   النتيجة:</label>
-                        <input id="marital_status" name="result" value="<?=$row['result'] ?>"
->
+                        <input id="marital_status" name="result" value="<?=$row['result'] ?>">
                              
                         <br>
                     </div>
@@ -356,8 +349,7 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="marital_status">   الدراسة:</label>
-                        <input id="marital_status" name="study" value="<?=$row['study'] ?>"
->
+                        <input id="marital_status" name="study" value="<?=$row['study'] ?>">
                             
                         <br>
                          <br>
@@ -365,8 +357,7 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="marital_status">   نوع الدراسة:</label>
-                        <input id="marital_status" name="Type_of_study" value="<?=$row['Type_of_study'] ?>"
->
+                        <input id="marital_status" name="Type_of_study" value="<?=$row['Type_of_study'] ?>">
                              
                         <br>
                          <br>
@@ -374,8 +365,7 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="marital_status">   صنف الدراسة:</label>
-                        <input id="marital_status" name="Classify_the_study" value="<?=$row['Classify_the_study'] ?>"
->
+                        <input id="marital_status" name="Classify_the_study" value="<?=$row['Classify_the_study'] ?>">
                              
                         <br>
                         <br>
