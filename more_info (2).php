@@ -202,7 +202,7 @@
                 <td>
                     <a href="delete_more_info.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>
                 </td>
-                <td> <img src="imeges/pen.png" alt=""> </td>
+                <td><a href="edit_more_info.php?id=<?=$row["ID"]?>"><img src="imeges/pen.png" alt=""></a></td>
             </tr>
 
             <?php
