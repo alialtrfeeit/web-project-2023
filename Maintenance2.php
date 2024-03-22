@@ -56,69 +56,9 @@
             <th> نوع الصيانة</th>
             <th> الملاحظات</th>
             <th> تحويل الى التجهيز</th>
-
-        </tr>
-        <tr>
-            <td> 1</td>
-            <td> احمد سمير علي</td>
-            <td> 2</td>
-            <td> 15</td>
-            <td> صيانة كهربائيات </td>
-            <td> لا يوجد</td>
-            <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
-
-        </tr>
-        <tr>
-            <td> 2</td>
-            <td> جلال احمد وليد</td>
-            <td> 2</td>
-            <td> 18</td>
-            <td> صيانة كهربائيات </td>
-            <td> لا يوجد</td>
-            <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
-        </tr>
-        <tr>
-            <td> 3</td>
-            <td> رضا فاضل حسين</td>
-            <td> 3</td>
-            <td> 21</td>
-            <td> صيانة كهربائيات </td>
-            <td> لا يوجد</td>
-            <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
-        </tr>
-        <tr>
-            <td> 4</td>
-            <td> بسام امجد عباس</td>
-            <td> 1</td>
-            <td> 11</td>
-            <td> صيانة كهربائيات </td>
-            <td> لا يوجد</td>
-            <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
-        </tr>
-    </table>
-    <br>
-
-
-    <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
-
-        <h3>
-            ادارة الصيانة </h3>
-    </div>
-
-
-
-
-    <table class="last_table">
-        <tr>
-            <th>N </th>
-            <th> نوع الصيانة </th>
-            <th>مسؤول الصيانة </th>
-            <th> مواد التجهيز</th>
-            <th> عدد موادالتجهيز</th>
-            <th> الملاحظات</th>
-            <th> الحالة</th>
             <th> حذف</th>
             <th> تعديل</th>
+
         </tr>
 
         <?php
@@ -153,22 +93,23 @@
                 <td> <?=$row["room_number"]?>  </td> 
                 <td> <?=$row["Maintenance_Type"]?>  </td> 
                 <td> <?=$row["Notes"]?>  </td>
-                <td>  <?=$row["the_condition"]?> </td> 
+                <!-- <td>  <?=$row["the_condition"]?> </td>  -->
+                <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
                 <td>   <a href="delete_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
                 <td>   <a href="edit_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/pen.png" alt=""> </a>  </td>
+
             </tr> 
 
                 <?php
 
              }
 
-         
-         
-
         $conn->close();
          ?>
-        
+
+ 
     </table>
+     
 
 </body>
 

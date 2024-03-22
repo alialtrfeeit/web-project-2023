@@ -40,78 +40,124 @@
     <br>
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
+<h3>
+    طلبات الصيانة </h3>
+</div>
+<table>
+<tr>
+    <th>N </th>
+    <th> اسم الطالب</th>
+    <th> رقم القطاع </th>
+    <th> رقم الغرفة</th>
+    <th> نوع الصيانة</th>
+    <th> الملاحظات</th>
+    <th> تحويل الى التجهيز</th>
+    <th> حذف</th>
+    <th> تعديل</th>
+
+</tr>
+
+<?php
+     $servername = "localhost:3306";   
+    $username = "root";
+    $password = "";
+    $db = "shms";
+
+$conn = new mysqli($servername, $username, $password, $db);
+$conn->set_charset("utf8mb4");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+ $sql = "SELECT * FROM  maintenance2";
+$result = $conn->query($sql);
+
+
+    if (!$result) {
+        die("Error in SQL query: " . $conn->error);
+    }
+
+    while($row = $result->fetch_assoc()) {
+        ?> 
+
+
+    <tr> 
+        <td> <?=$row["ID"]?>   </td> 
+        <td> <?=$row["students_name"]?>  </td>
+        <td> <?=$row["Sector_number"]?>  </td> 
+        <td> <?=$row["room_number"]?>  </td> 
+        <td> <?=$row["Maintenance_Type"]?>  </td> 
+        <td> <?=$row["Notes"]?>  </td>
+        <!-- <td>  <?=$row["the_condition"]?> </td>  -->
+        <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
+        <td>   <a href="delete_Maintenance_in_managment.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
+        <td>   <a href="edit_Maintenance_in_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/pen.png" alt=""> </a>  </td>
+
+    </tr> 
+
+        <?php
+
+     }
+
+$conn->close();
+ ?>
+
+
+</table>
+
+
+    <br>
+    <br> 
+    <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
+
         <h3>
-            ادارة الصيانة </h3>
+            ادارة التجهيز </h3>
     </div>
-    
     <table class="last_table">
         <tr>
             <th>N </th>
-            <th> نوع الصيانة </th>
+            <th> اسم المادة</th>
             <th>مسؤول الصيانة </th>
-            <th> مواد التجهيز</th>
-            <th> عدد موادالتجهيز</th>
+            <th> نوع الصيانة</th>
+            <th> عدد المواد</th>
             <th> الملاحظات</th>
             <th> الحالة</th>
             <th> حذف</th>
             <th> تعديل</th>
         </tr>
-
         <?php
-             $servername = "localhost:3306";   
-            $username = "root";
-            $password = "";
-            $db = "shms";
 
-        $conn = new mysqli($servername, $username, $password, $db);
-        $conn->set_charset("utf8mb4");
+           $servername = "localhost:3306";   
+          $username = "root";
+          $password = "";
+          $db = "shms";
 
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+          $conn = new mysqli($servername, $username, $password, $db);
+          $conn->set_charset("utf8mb4");
 
-         $sql = "SELECT * FROM  maintenance2";
+
+        $sql = "SELECT * FROM equip2";
         $result = $conn->query($sql);
-
- 
-            if (!$result) {
-                die("Error in SQL query: " . $conn->error);
+        if ($result) {
+            while ($row = $result->fetch_assoc()) {
+        ?>
+        <tr>
+            <td><?=$row["ID"]?></td>
+            <td><?=$row["Subject_Name"]?></td>
+            <td><?=$row["maintenance_manager"]?></td>
+            <td><?=$row["Maintenance_Type"]?></td>
+            <td><?=$row["Number_of_materials"]?></td>
+            <td><?=$row["Notes"]?></td>
+            <td><?=$row["condition"]?></td>
+            <td><a href="delete_equip2_in_managment.php?id=<?=$row["ID"]?>"><img src="imeges/trash.png" alt=""></a></td>
+            <td><a href="edit_equip2_in_managment.php?id=<?=$row["ID"]?>"><img src="imeges/pen.png" alt=""></a></td>
+        </tr>
+        <?php
             }
-
-            while($row = $result->fetch_assoc()) {
-                ?> 
-
-
-                <tr> 
-                 <td> <?=$row["ID"]?>   </td> 
-                <td> <?=$row["students_name"]?>  </td>
-                 <td> <?=$row["Sector_number"]?>  </td> 
-                 <td> <?=$row["room_number"]?>  </td> 
-                <td> <?=$row["Maintenance_Type"]?>  </td> 
-                <td> <?=$row["Notes"]?>  </td>
-                <td>  <?=$row["the_condition"]?> </td> 
-                <td>   <a href="delete_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
-                <td>  <img src="imeges/pen.png" alt="">  </td>
-                  </tr> 
-
-                <?php
- 
-
-             }
-
-
-        
-         
-
-        $conn->close();
-         ?>
-        
+        }
+        ?>
     </table>
-
-
-
-    <br>
-    <br>
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
         <h3>
@@ -158,66 +204,7 @@
 
     <br>
     <br>
-    <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
-
-        <h3>
-            ادارة التجهيز </h3>
-    </div>
-    <table class="last_table">
-        <tr>
-            <th>N </th>
-            <th> اسم المادة</th>
-            <th>مسؤول الصيانة </th>
-            <th> نوع الصيانة</th>
-            <th> عدد المواد</th>
-            <th> الملاحظات</th>
-            <th> الحالة</th>
-            <th> حذف</th>
-            <th> تعديل</th>
-        </tr>
-        <?php
-             $servername = "localhost:3306";   
-            $username = "root";
-            $password = "";
-            $db = "shms";
-
-        $conn = new mysqli($servername, $username, $password, $db);
-        $conn->set_charset("utf8mb4");
-
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-         $sql = "SELECT * FROM  equip2";
-        $result = $conn->query($sql);
-
- 
-            if (!$result) {
-                die("Error in SQL query: " . $conn->error);
-            }
-
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . $row["ID"] . "</td>";
-                echo "<td>" . $row["Subject_Name"] . "</td>";
-                echo "<td>" . $row["maintenance_manager"] . "</td>";
-                echo "<td>" . $row["Maintenance_Type"] . "</td>";
-                echo "<td>" . $row["Number_of_materials"] . "</td>";
-                echo "<td>" . $row["Notes"] . "</td>";
-                echo "<td>" . $row["condition"] . "</td>";
-                echo '<td> <img src="imeges/trash.png" alt=""></td>';
-                echo '<td> <img src="imeges/pen.png" alt=""> </td>';
-                echo "</tr>";
-
-             }
-
-
-        
-         
-
-        $conn->close();
-        ?>  
-    </table>
+   
 
 </body>
 
