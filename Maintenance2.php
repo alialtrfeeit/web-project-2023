@@ -93,8 +93,7 @@
                 <td> <?=$row["room_number"]?>  </td> 
                 <td> <?=$row["Maintenance_Type"]?>  </td> 
                 <td> <?=$row["Notes"]?>  </td>
-                <!-- <td>  <?=$row["the_condition"]?> </td>  -->
-                <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
+                 <td> <a href="equip.html">اضغط هنا للتجهيز</a> </td>
                 <td>   <a href="delete_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
                 <td>   <a href="edit_Maintenance.php?id=<?=$row["ID"]?>"> <img src="imeges/pen.png" alt=""> </a>  </td>
 
