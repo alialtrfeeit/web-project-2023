@@ -13,4 +13,7 @@ $conn->set_charset("utf8mb4");
   $id= $_GET['id'];
   $result = mysqli_query($conn , "DELETE FROM equip2 WHERE ID = $id");
   header("Location:equip2 (2).php");
+
+  
+   echo "<script>alert('Delete information successful')</script>";
 ?>

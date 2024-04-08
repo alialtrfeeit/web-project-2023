@@ -24,8 +24,8 @@
             <li><a href="registration2.html">التسجيل</a></li>
             <li><a href="equip2 (2).php">التجهيز</a></li>
             <li><a href="Maintenance2.php">الصيانة</a></li>
-            <li><a class="log" href="login.html"> LOGOUT  </a></li>
-            <li><a class="log" href="sin_as___.html"> New Account  </a></li>
+            <li><a class="log" href="login.html"> تسجيل الخروج  </a></li>
+            <li><a class="log" href="sin_as___.html"> حساب جديد    </a></li>
         </ul>
     </nav>
 

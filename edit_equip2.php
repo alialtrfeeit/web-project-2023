@@ -71,7 +71,9 @@ if(isset($_GET['id'])) {
             <label>مسؤول الصيانة</label>
             <input type="text" id="text" name="maintenance_manager" value="<?=$row['maintenance_manager'] ?>">
             <label>الملاحظات</label>
-            <input type="text" name="Notes" value="<?=$row['Notes'] ?>">
+            <input type="text" name="Notes" value="<?=$row['Notes'] ?>"> 
+
+
             <input type="submit" name="submit" value="تعديل">
         </form>
     </div>
