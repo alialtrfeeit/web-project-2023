@@ -112,7 +112,7 @@ $conn->close();
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
         <h3>
-            ادارة التجهيز </h3>
+            طلبات التجهيز </h3>
     </div>
     <table class="last_table">
         <tr>
@@ -161,7 +161,7 @@ $conn->close();
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
         <h3>
-            ادارة التسجيل </h3>
+              التسجيل </h3>
     </div>
     <table>
         <tr>

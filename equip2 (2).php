@@ -29,7 +29,7 @@ include_once "config.php";
         <button onclick="document.location='equip.html'">فتح استمارة تجهيز</button>
     </div>
     <div class="image-ref"><img src="imeges/klipartz.com.png" alt="">
-        <h3>ادارة التجهيز</h3>
+        <h3>طلبات التجهيز</h3>
     </div>
     <table>
         <tr>
