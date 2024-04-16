@@ -1,66 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="login.css">
-
-
 </head>
 
-
 <body>
-
-    <div dir="rtl" class="image-container"><img src=" imeges/images.png" alt="">
-        <h1>
-            قسم شؤون الاقسام الداخلية
-        </h1>
+    <div dir="rtl" class="image-container">
+        <img src="imeges/images.png" alt="">
+        <h1>قسم شؤون الاقسام الداخلية</h1>
     </div>
 
     <header dir="rtl" class="header">
-
         <nav>
             <!-- <ul>
-                <li><a style="background-color: #bab5b5;" href=" home.html">الصفحة الرئيسية</a></li>
+                <li><a style="background-color: #bab5b5;" href="home.html">الصفحة الرئيسية</a></li>
                 <li><a href="managment.html">الادارة</a></li>
-                <li><a href=" registration2.html">التسجيل</a></li>
-                <li><a href=" equip2.html">التجهيز</a></li>
-                <li><a href="  Maintenance2.html">الصيانة</a></li>
-
+                <li><a href="registration2.html">التسجيل</a></li>
+                <li><a href="equip2.html">التجهيز</a></li>
+                <li><a href="Maintenance2.html">الصيانة</a></li>
             </ul> -->
         </nav>
         <hr>
-
     </header>
-
 
     <div class="container">
         <h1>Login</h1>
-
-        <form action="login.php" method="post">
-
+        <form id="loginForm" action="login.php" method="post">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-
-
+            <span id="emailError" class="error-message"></span>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error-message"></span>
 
             <div class="options">
                 <label for="remember-me">
-					<input type="checkbox" id="remember-me" name="remember-me"> Remember me
-				</label>
+                    <input type="checkbox" id="remember-me" name="remember-me"> Remember me
+                </label>
                 <a class="forgot-password">Forgot Password?</a>
             </div>
 
-
             <input type="submit" value="Login">
-
         </form>
     </div>
+
+    <script src="login.js"></script>
 </body>
 
 </html>

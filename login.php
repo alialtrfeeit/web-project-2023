@@ -29,9 +29,16 @@ $result = mysqli_query($conn, $sql);
  else {
 
   echo '<script>alert("error your data incorrect."); window.location.href = "login.html";</script>';
+  // $error_message = "Error: Your login credentials are incorrect.";
 
 
 }
+
+ 
+// if (isset($error_message)) {
+//     echo '<div class="error-message">' . $error_message . '</div>';
+// }
+ 
 
  mysqli_close($conn);
 

@@ -41,7 +41,7 @@ $Type_of_study = $_POST['Type_of_study'];
 $Classify_the_study = $_POST['Classify_the_study'];
  
 $sql = "INSERT INTO  mor_info ( gender , students_name , Fathers_Name , Grandfather_name   , 
-                Fathers_grandfathers_name ,Title ,
+                	Fathers_grandfathers_name ,Title ,
                 marital_status ,ID_Number , Name_of_circle_people , Record , newspaper ,
                  National_card_number , Residence_card_number , birth_date , place_of_birth , 
                  Governorate , Judiciary , alnaheea ,nearest_function_point , Chosen_name ,

@@ -67,7 +67,7 @@ if(isset($_POST['submit'])) {
             <label>نوع الصيانة</label>
             <input type="text" name="_MaintenanceType"  value="<?=$row['Maintenance_Type'] ?>">
             <label>الملاحظات</label>
-            <input type="text" name="_Notes" value="<?=$row['Notes'] ?>">
+            <textarea name="Notes"><?=$row['Notes']?></textarea>
             <input type="submit" name="submit" value="تعديل">
         </form>
     </div>

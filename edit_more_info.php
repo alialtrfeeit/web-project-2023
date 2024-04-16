@@ -16,7 +16,7 @@ if(isset($_GET['id'])) {
         $students_name = $_POST['students_name'];
         $Fathers_Name = $_POST['Fathers_Name'];
         $Grandfather_name = $_POST['Grandfather_name'];
-        $Fathers_Grandfathers_name = $_POST['Fathers_Grandfathers_name'];
+        $Fathers_Grandfathers_name = $_POST['Fathers_grandfathers_name'];
         $Title = $_POST['Title'];
         $marital_status = $_POST['marital_status'];
         $ID_Number = $_POST['ID_Number'];
@@ -49,7 +49,7 @@ if(isset($_GET['id'])) {
                         students_name = '$students_name',
                         Fathers_Name = '$Fathers_Name',
                         Grandfather_name = '$Grandfather_name',
-                        Fathers_Grandfathers_name = '$Fathers_Grandfathers_name',
+                        Fathers_grandfathers_name = '$Fathers_Grandfathers_name',
                         Title = '$Title',
                         marital_status = '$marital_status',
                         ID_Number = '$ID_Number',
@@ -178,7 +178,7 @@ if(isset($_GET['id'])) {
 
                     <div class="form-group">
                         <label for="grandfather_name">اسم جد الاب:</label>
-                        <input type="text" id="grandfather_name" name="Fathers_Grandfathers_name" value="<?=$row['Fathers_Grandfathers_name'] ?>"><br>
+                        <input type="text" id="grandfather_name" name="Fathers_grandfathers_name" value="<?=$row['Fathers_grandfathers_name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
@@ -296,12 +296,12 @@ if(isset($_GET['id'])) {
                 <div class="flex-container">
                     <div class="form-group">
                         <label for="grandmother_name">     اسم المختار:</label>
-                        <input type="text" id="grandmother_name" name="Chosen_Name" value="<?=$row['Chosen_Name'] ?>"><br>
+                        <input type="text" id="grandmother_name" name="Chosen_Name" value="<?=$row['Chosen_name'] ?>"><br>
                     </div>
 
                     <div class="form-group">
                         <label for="grandfather_name">  رقم هاتف الطالب  :</label>
-                        <input type="tel" id="grandfather_name" name="Student_Phone_Number" value="<?=$row['Student_Phone_Number'] ?>"><br>
+                        <input type="tel" id="grandfather_name" name="Student_Phone_Number" value="<?=$row['Student_phone_number'] ?>"><br>
                     </div>
 
 
@@ -312,7 +312,7 @@ if(isset($_GET['id'])) {
 
                   <div class="form-group">
                         <label for="title">      رقم هاتف ولي امر الطالب:</label>
-                        <input type="tel" id="title" name="Phone_Number_of_the_Students_Guardian" value="<?=$row['Phone_Number_of_the_Students_Guardian'] ?>"><br>
+                        <input type="tel" id="title" name="Phone_Number_of_the_Students_Guardian" value="<?=$row['Phone_number_of_the_students_guardian'] ?>"><br>
                     </div>
 
                 </div>
