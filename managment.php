@@ -161,46 +161,64 @@ $conn->close();
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
         <h3>
-              التسجيل </h3>
+            الطلبة المسجلين </h3>
     </div>
     <table>
         <tr>
-            <th>N </th>
+            <th> N </th>
             <th> اسم الطالب</th>
-            <th> الحالة</th>
-            <th> حذف</th>
-            <th> تعديل</th>
+            <th> اسم  الاب</th>
+            <th> رقم هاتف الطالب</th>
+            <th>معلومات اضافية </th>
+            <th> حذف </th>
         </tr>
-        <tr>
-            <td> 1</td>
-            <td> امير عمار لفته </td>
-            <td> تم التسجيل</td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-            <td> <img src="imeges/pen.png" alt=""> </td>
-        </tr>
-        <tr>
-            <td> 2</td>
-            <td> محمد علي حميدان </td>
-            <td> تم التسجيل</td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-            <td> <img src="imeges/pen.png" alt=""></td>
-        </tr>
-        <tr>
-            <td> 3</td>
-            <td> وليد اسماعيل حسين </td>
-            <td> تم التسجيل</td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-            <td> <img src="imeges/pen.png" alt=""></td>
-        </tr>
-        <tr>
-            <td> 4</td>
-            <td> مصطفى صلاح جبار </td>
-            <td> لم يتم التسجيل</td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-            <td> <img src="imeges/pen.png" alt=""></td>
-        </tr>
-    </table>
 
+
+
+        <?php
+             $servername = "localhost:3306";   
+            $username = "root";
+            $password = "";
+            $db = "shms";
+
+        $conn = new mysqli($servername, $username, $password, $db);
+        $conn->set_charset("utf8mb4");
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+         $sql = "SELECT * FROM  mor_info";
+        $result = $conn->query($sql);
+
+ 
+            if (!$result) {
+                die("Error in SQL query: " . $conn->error);
+            }
+
+            while($row = $result->fetch_assoc()) {
+                ?> 
+
+
+            <tr> 
+                <td> <?=$row["ID"]?>   </td> 
+                <td> <?=$row["students_name"]?>  </td>
+                <td> <?=$row["Fathers_Name"]?>  </td>
+                <td> <?=$row["Student_phone_number"]?>  </td> 
+                <td><a href="display_more_info_in_managment.php?id=<?=$row["ID"]?>"> اضغط لعرض التفاصيل</a></td>
+                <td>   <a href="delete_registration2_in_managment.php?id=<?=$row["ID"]?>"> <img src="imeges/trash.png" alt=""></a>  </td>
+ 
+            </tr> 
+
+                <?php
+
+             }
+
+        $conn->close();
+         ?>
+         
+
+    </table>
 
     <br>
     <br>

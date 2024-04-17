@@ -102,21 +102,7 @@
 
         $conn->close();
          ?>
-        <!-- <tr>
-            <td>1 </td>
-            <td> امير عمار لفته</td>
-            <td> تم التسجيل</td>
-            <td> <a href="more_info (2).php">  اضغط لعرض التفاصيل</a> </td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-        </tr>
-        <tr>
-            <td> 2</td>
-            <td> محمد علي حميدان</td>
-            <td> تم التسجيل</td>
-            <td> <a href="more_info (2).php">  اضغط لعرض التفاصيل</a> </td>
-            <td> <img src="imeges/trash.png" alt=""></td>
-
-        </tr> -->
+       
 
     </table>
 
