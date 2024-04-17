@@ -142,7 +142,7 @@ if(isset($_GET['id'])) {
 
 
 
-    <form action="more_info (2).php" method="post">
+    <form action="registration2.php" method="post">
 
         <div class="mainsubfrom">
             <div class="subform">
@@ -374,7 +374,7 @@ if(isset($_GET['id'])) {
                 </div>
 
                 <div class="flex-container">
-                    <input type="submit" name="submit" value="تعديل">
+                    <input type="submit" name="submit" value="العودة">
                 </div>
 
             </div>

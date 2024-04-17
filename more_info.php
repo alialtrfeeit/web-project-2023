@@ -63,7 +63,7 @@ if (mysqli_multi_query($conn, $sql)) {
 
  
 echo "<script>alert('add information successful')</script>";
- header("refresh:2;url = registration2.html");
+ header("refresh:1;url = registration2.php");
  exit;
 
 } else {
