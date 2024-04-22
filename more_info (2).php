@@ -41,7 +41,7 @@
     <div class="image-ref"><img src=" imeges/klipartz.com.png" alt="">
 
         <h3>
-            معلومات الطلبة المسجلة </h3>
+            معلومات الطلبة المسجلين </h3>
     </div>
     <table>
         <tr>

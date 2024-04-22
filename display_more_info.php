@@ -147,7 +147,7 @@ if(isset($_GET['id'])) {
         <div class="mainsubfrom">
             <div class="subform">
 
-                <h1>استمارة التسجيل </h1>
+                <h1>   معلومات الطلبة المسجلين </h1>
 
                 <div class="flex-container">
                     <div class="form-group1">

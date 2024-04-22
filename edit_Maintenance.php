@@ -12,6 +12,12 @@ $row = mysqli_fetch_assoc($sql);
 if(isset($_POST['submit'])) {
     // Extracting form data
     extract($_POST);
+
+    $_studentsname = $_POST['_studentsname'];
+    $_Sectornumber = $_POST['_Sectornumber'];
+    $_roomnumber = $_POST['_roomnumber'];
+    $_MaintenanceType = $_POST['_MaintenanceType'];
+    $_Notes = $_POST['Notes'];
     
     // Updating the record in the database
     $sql = mysqli_query($conn, "UPDATE maintenance2 SET students_name = '$_studentsname', 
