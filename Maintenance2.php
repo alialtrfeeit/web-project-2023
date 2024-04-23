@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maintenance2</title>
     <link rel="stylesheet" type="text/css" href="tb.css">
+    <style>
+  #live_search {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif; /* Change font */
+    font-size: 19px; /* Adjust font size */
+    padding: 10px; /* Add padding */
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add box shadow */
+  }
+</style>
 
 </head>
 <div class="image-container"><img src="imeges/images.png" alt="">
@@ -37,6 +51,50 @@
         <button onclick="document.location='Maintenance.html'"> فتح استمارة   صيانة</button>
 
     </div>
+
+
+
+    
+<input type="text" class="form-control"  id="live_search" autocomplete="off" placeholder="   بحث ...">
+
+</div>
+
+<div id="searchresult"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $("#live_search").keyup(function(){
+
+            var input = $(this).val();
+
+           if (input !="") {
+            
+            $.ajax({
+                url:"Maintenance_search.php",
+                method:"POST",
+                data:{input:input},
+
+                success:function(data){
+                    $("#searchresult").html(data);
+                    $("#searchresult").css("display","block");
+
+                }
+
+            });
+           }else {
+
+            $("#searchresult").css("display","none");
+
+           }
+        });
+    });
+
+</script>
+
 
 
 

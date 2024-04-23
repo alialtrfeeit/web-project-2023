@@ -9,8 +9,11 @@ if(isset($_GET['id'])) {
     $sql = mysqli_query($conn, "SELECT * FROM mor_info WHERE id = $id");
     $row = mysqli_fetch_assoc($sql);
 
+
+ 
     // Handle form submission for editing
     if(isset($_POST['submit'])) {
+ 
         // Extract form data
         $gender = $_POST['gender'];
         $students_name = $_POST['students_name'];

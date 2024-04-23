@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>managment</title>
     <link rel="stylesheet" type="text/css" href="tb.css">
+ 
 
 </head>
 <div class="image-container"><img src="imeges/images.png" alt="">

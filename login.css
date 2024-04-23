@@ -189,16 +189,3 @@ input[type="password"] {
     align-items: center;
     margin-bottom: 20px;
 }
-
-.error-message {
-    background-color: #ffcccc;
-    /* Light red background */
-    color: #cc0000;
-    /* Red text */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(204, 0, 0, 0.5);
-    /* Red shadow */
-    width: fit-content;
-    margin: 20px auto;
-}
