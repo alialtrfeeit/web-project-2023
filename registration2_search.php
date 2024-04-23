@@ -20,7 +20,7 @@ if (isset($_POST['input'])) {
                         <th>  اسم الطالب</th>
                         <th> اسم الاب	</th>
                         <th>   رقم هاتف الطالب	  </th>
-                       
+                        <th>معلومات اضافية	</th>
                     </tr>
             </thead>
 
@@ -41,6 +41,8 @@ if (isset($_POST['input'])) {
                         <td><?php echo $students_name;?></td>
                         <td><?php echo $Fathers_Name;?></td>
                         <td><?php echo $Student_phone_number;?></td>
+                        <td><a href="display_more_info.php?id=<?=$row["ID"]?>"> اضغط لعرض التفاصيل</a></td>
+
             
                     </tr>
 
