@@ -55,7 +55,7 @@ if (isset($_POST['input'])) {
 <?php
        
     }else {
-        echo "<h2   style='text-align:center';> لا يوجد نتائج</h2>";
+        echo "<h2   style='color:red; text-align:center';> لا يوجد نتائج</h2>";
     }
 }
 
