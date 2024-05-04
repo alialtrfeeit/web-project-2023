@@ -15,12 +15,12 @@ include_once "config.php";
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Arial, sans-serif; /* Change font */
-    font-size: 19px; /* Adjust font size */
-    padding: 10px; /* Add padding */
-    border: 2px solid #ccc; /* Add border */
-    border-radius: 5px; /* Add border radius */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add box shadow */
+    font-family: Arial, sans-serif;  
+    font-size: 19px;  
+    padding: 10px;  
+    border: 2px solid #ccc;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
   }
 </style>
 </head>
@@ -32,7 +32,7 @@ include_once "config.php";
         <nav>
             <ul>
                 <li><a href="home.html">الصفحة الرئيسية</a></li>
-                <li><a href="managment.php">الادارة</a></li>
+                <li><a href="managment.php">لوحةالطلبات</a></li>
                 <li><a href="registration2.php">التسجيل</a></li>
                 <li><a style="background-color: #bab5b5;" href="equip2 (2).php">التجهيز</a></li>
                 <li><a href="Maintenance2.php">الصيانة</a></li>

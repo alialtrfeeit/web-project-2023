@@ -21,7 +21,7 @@
     <nav>
         <ul>
             <li><a href="home.html">الصفحة الرئيسية</a></li>
-            <li><a style="background-color: #bab5b5;" href="managment.php">الادارة</a></li>
+            <li><a style="background-color: #bab5b5;" href="managment.php">لوحةالطلبات</a></li>
             <li><a href="registration2.php">التسجيل</a></li>
             <li><a href="equip2 (2).php">التجهيز</a></li>
             <li><a href="Maintenance2.php">الصيانة</a></li>

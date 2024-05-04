@@ -124,7 +124,7 @@ if(isset($_GET['id'])) {
         <nav>
             <ul>
                 <li><a href="home.html">الصفحة الرئيسية</a></li>
-                <li><a href="managment.html">الادارة</a></li>
+                <li><a href="managment.html">لوحةالطلبات</a></li>
                 <li><a style="background-color: #bab5b5;" href="registration2.php">التعديل</a></li>
                 <li><a href="equip2.html">التجهيز</a></li>
                 <li><a href="Maintenance2.html">الصيانة</a></li>
